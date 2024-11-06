@@ -1,0 +1,163 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Estilos de Encabezado */
+header {
+    background: #0066cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('minerva-night.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    text-align: center;
+}
+
+.cta-button {
+    background: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background: #e68a00;
+}
+
+/* Secciones Generales */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #0066cc;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Sección de Historia */
+#historia p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.1em;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 10px;
+    border-left: 4px solid #0066cc;
+}
+
+/* Galería de Imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mapa Interactivo */
+.map {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+}
+
+/* Testimonios */
+#testimonios blockquote {
+    font-size: 1.1em;
+    color: #333;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 15px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie de Página */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .cta-button {
+        padding: 8px 16px;
+    }
+}
